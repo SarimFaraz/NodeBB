@@ -102,6 +102,7 @@ module.exports = function (User) {
 		}
 	}
 
+	// Dummy comment to trigger SC
 	function validateLanguage(value, languageCodes) {
 		if (value && !languageCodes.includes(value)) {
 			throw new Error('[[error:invalid-language]]');
