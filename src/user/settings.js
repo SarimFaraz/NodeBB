@@ -102,13 +102,14 @@ module.exports = function (User) {
 		}
 	}
 
-	// Dummy comment to trigger SC
+	// Co-pilot assisted code
 	function validateLanguage(value, languageCodes) {
 		if (value && !languageCodes.includes(value)) {
 			throw new Error('[[error:invalid-language]]');
 		}
 	}
 
+	// Co-pilot assisted code
 	User.saveSettings = async function (uid, data) {
 		const maxPostsPerPage = meta.config.maxPostsPerPage || 20;
 		validatePaginationValue(data.postsPerPage, maxPostsPerPage);
