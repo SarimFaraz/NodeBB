@@ -97,6 +97,7 @@ module.exports = function (User) {
 
 	// Co-pilot assisted code
 	function validatePaginationValue(value, max) {
+		console.log('pagination is saved');
 		if (!value || parseInt(value, 10) <= 1 || parseInt(value, 10) > max) {
 			throw new Error(`[[error:invalid-pagination-value, 2, ${max}]]`);
 		}
@@ -104,6 +105,7 @@ module.exports = function (User) {
 
 	// Co-pilot assisted code
 	function validateLanguage(value, languageCodes) {
+		console.log('language is saved');
 		if (value && !languageCodes.includes(value)) {
 			throw new Error('[[error:invalid-language]]');
 		}
